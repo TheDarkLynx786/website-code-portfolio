@@ -6,51 +6,71 @@ export default function Home() {
     <>
       <div className="grid grid-rows-[20px_1fr_20px] overflow-auto items-center justify-items-center min-h-screen p-5 pb-20 gap-16 sm:p-5 sm:pb-20 font-[family-name:var(--font-geist-sans)]">
         
-        <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-
-          <Headshot />
-
-          <h1
-            className="flex w-full h-full justify-center items-center text-xl font-[family-name:var(--font-geist-mono)]"
+        <main className="flex flex-col gap-8 row-start-2 items-center sm:items-center">
+          
+          {/*Headshot, Title, and Subtitle*/}
+          <div
+            className="max-w-prose flex flex-col w-full h-full justify-center items-center"
           >
-            Hello, I'm Murtaza Haque!
-          </h1>
-          
-          
-          <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-            <li className="mb-2">
-              Get started by editing{" "}
-              <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-                src/app/page.js
-              </code>
-              .
-            </li>
-            <li>Save and see your changes instantly.</li>
-          </ol>
+            <Headshot />
+            
+            <h1
+              className="text-xl font-[family-name:var(--font-geist-mono)]"
+            >
+              Hello, I'm Murtaza Haque!
+            </h1>
+            
+            <h2
+              className="flex text-center h-full justify-center items-center text-m font-[family-name:var(--font-geist-mono)]"
+            >
+              I am a student at the Texas Academy of Mathematics and Science in the University of North Texas.
+              I do some cool things with computers, like website design, game development, and machine learning.
+
+            </h2>
+          </div>
 
           <div className="flex gap-4 items-center flex-col sm:flex-row">
             <a
               className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-              href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+              href="https://instagram.com/murtazahaque"
               target="_blank"
               rel="noopener noreferrer"
             >
               <Image
-                className="dark:invert"
-                src="/vercel.svg"
-                alt="Vercel logomark"
-                width={20}
-                height={20}
+                className=""
+                src="/brand-instagram.svg"
+                alt="Instagram"
+                width={30}
+                height={30}
               />
-              Deploy now
             </a>
             <a
-              className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-              href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+              className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
+              href="https://github.com/TheDarkLynx786"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Read our docs
+              <Image
+                className=""
+                src="/brand-github.svg"
+                alt="Github"
+                width={30}
+                height={30}
+              />
+            </a>
+            <a
+              className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
+              href="https://www.linkedin.com/in/murtaza-haque/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                className=""
+                src="/brand-linkedin.svg"
+                alt="Linkedin"
+                width={30}
+                height={30}
+              />
             </a>
           </div>
         </main>
